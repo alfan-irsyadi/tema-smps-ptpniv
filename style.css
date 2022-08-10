@@ -1,0 +1,394 @@
+body {
+    text-align: left;
+}
+
+#ttr_sidebar {
+    border-left: 1px solid black;
+}
+
+#ttr_footer {
+    width: 100%;
+    border-top: 1px #a2a2a2 solid;
+    text-align: center;
+}
+
+.title {
+    font-size: 11pt;
+    font-family: verdana;
+    font-weight: bold;
+}
+
+/* UTILITIES */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+.navbar-alfan {
+    padding: 15px 60px 15px 20px;
+    background-color: rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.2);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 99999;
+    color: white;
+    font-size: 20px;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, .6);
+}
+
+.logo {
+    padding: 5px 0;
+}
+
+.navbar-li {
+    display: inline;
+    padding: 5px 15px;
+}
+
+.navbar-li:hover {
+    background-color: #397054;
+}
+
+.navbar-alfan a {
+    color: black;
+    text-decoration: none;
+}
+
+.menu {
+    display: none;
+}
+
+.navbar-ul {
+    margin-bottom: 0;
+}
+
+.menu-line {
+
+    width: 22px;
+    height: 3px;
+    margin-bottom: 3px;
+    background-color: black;
+}
+
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes main {
+    0% {
+        background-image: url(images/main.JPG);
+    }
+
+    35% {
+        background-image: url(images/sub.JPG);
+        color: white;
+    }
+
+    65% {
+        background-image: url(images/last.JPG);
+    }
+
+    100% {
+        background-image: url(images/main.JPG);
+    }
+
+}
+
+.main-wrapper {
+    padding: 180px 0 100px 0;
+    background-image: url(images/main.JPG);
+    background-size: cover;
+    background-color: none;
+    color: #333333;
+    text-align: left;
+    animation-name: main;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+#id-navbar {
+    overflow: hidden;
+}
+
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+    animation: fadeIn 1s;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 9999;
+}
+
+/* .sticky + .content {
+    padding-top: 60px;
+  } */
+
+.slide img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    /*   filter: brightness(50%) */
+    /*   height: 500px; */
+}
+
+.carousel-inner:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.carousel-content {
+    position: absolute;
+    bottom: 50%;
+    left: 10%;
+    z-index: 20;
+    color: white;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, .6);
+}
+
+/*
+  .header-artikel{
+      padding: 20px 40px;
+      border-bottom: 2px solid #eeeeee;
+  }
+  .content-artikel{
+      padding: 20px 40px;
+  }
+  */
+
+/* header dengan dropdown #astrid */
+/*
+  header {
+    height: 65px;
+    max-width: 1300px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+  } */
+
+.header-left {
+    display: inline-block;
+}
+
+.header-left a {
+    text-decoration: none;
+    padding-top: 20px;
+    color: #164302;
+    letter-spacing: 1px;
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+.header-right {
+    float: right;
+}
+
+.header-right ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.header-right li a {
+    display: inline-block;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 5px 10px;
+    text-decoration: none;
+}
+
+.header-right li a:hover {
+    background-color: #55826d;
+    border-radius: 13px;
+}
+
+.header-right>ul>li {
+    float: left;
+}
+
+li.dropdown {
+    margin-right: 15px;
+    display: inline-block;
+    border: 1px solid rgba(5, 5, 5, 0.692);
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.dropdown:hover .isi-dropdown {
+    display: block;
+    margin-top: 6px;
+}
+
+.isi-dropdown {
+    width: 200px;
+    position: fixed;
+    display: none;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    background-color: black;
+    padding: 0;
+    text-align: left;
+}
+
+.isi-dropdown li {
+    margin: 0;
+    padding: 0px 5px 7px 10px;
+}
+
+.isi-dropdown a {
+    color: white !important;
+}
+
+.isi-dropdown a:hover {
+    border-radius: 0;
+    display: block;
+    background: rgba(255, 255, 255, 0.2);
+}
+
+/* BATAS HEADER*/
+
+/* 2 kolom */
+/* Create two unequal columns that floats next to each other */
+.column {
+    float: left;
+    padding: 10px;
+    height: 1000px;
+    /* Should be removed. Only for demonstration */
+
+}
+
+.alfan-form-header {
+    margin: 40px 0px;
+}
+
+.column-right {
+    margin: auto;
+    width: 40%;
+}
+
+.alfan-dekorasi-login {
+    background-color: #ffdd00;
+    width: 100px;
+    height: 10px;
+}
+
+
+.left {
+    width: 20%;
+}
+
+.right {
+    padding: 40px;
+    width: 80%;
+}
+
+.row {
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.sidebar {
+    background-color: aliceblue;
+}
+
+.header-sidebar {
+    font-size: 20px;
+    font-weight: 700;
+    padding: 30px 20px;
+}
+
+.sidebar ul {
+    margin: 0;
+    padding: 0;
+}
+
+.sidebar li {
+    padding: 1em 5px;
+    background-color: #e5edf3;
+    border-radius: 15px;
+    text-align: center;
+    font-weight: 600;
+}
+
+.sidebar li:hover {
+    background-color: #ddd;
+}
+
+/* end of 2 kolom */
+
+/* untuk responsive */
+@media screen and (max-width:800px) {
+    .navbar-alfan {
+        /* width: 100%; */
+        flex-direction: column;
+        align-items: center;
+        padding: 0px;
+    }
+
+    .logo {
+        align-items: flex-start;
+        padding: 20px 0px;
+    }
+
+    li.dropdown {
+        margin-right: 0px;
+        display: block;
+        border: 0px solid rgba(5, 5, 5, 0.692);
+        border-radius: 0px;
+    }
+
+    .navbar-ul {
+        width: 100%;
+        display: none;
+    }
+
+    .navbar-li {
+        background-color: #EEEEEE;
+        display: block;
+        text-align: center;
+        padding: 10px 0px;
+        border-top: 1px solid #ddd;
+        /* padding-top: 20px; */
+    }
+
+    .menu {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+
+    .active {
+        display: block;
+    }
+}
