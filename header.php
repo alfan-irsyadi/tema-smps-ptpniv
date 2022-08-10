@@ -1,6 +1,6 @@
 <html>
 <head>
-<title>Tutorial theme</title>
+<title>SMP Swasta PTPN 4 Dolok</title>
 <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri().'/css/bootstrap.css'; ?>">
 <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>">
 </head>

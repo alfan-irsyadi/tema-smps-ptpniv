@@ -23,101 +23,102 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-body {
+  }
+  
+  body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-a {
+  }
+  
+  a {
     text-decoration: none;
-}
-
-li {
+  }
+  
+  li {
     list-style: none;
-}
-
-.navbar-alfan {
+  }
+  
+  .navbar-alfan {
     padding: 15px 60px 15px 20px;
-    background-color: rgba(0, 0, 0, 0.1);
+    background-color: white;
     display: flex;
     justify-content: space-between;
     box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.2);
-    position: fixed;
+    position: relative;
     width: 100%;
-    top: 0;
+    /* top: 0; */
     z-index: 99999;
-    color: white;
+    /* color: white; */
     font-size: 20px;
     text-shadow: 0 1px 2px rgba(0, 0, 0, .6);
-}
-
-.logo {
+  }
+  
+  .logo {
     padding: 5px 0;
-}
-
-.navbar-li {
+  }
+  
+  .navbar-li {
     display: inline;
     padding: 5px 15px;
-}
-
-.navbar-li:hover {
+  }
+  
+  .navbar-li:hover {
     background-color: #397054;
-}
-
-.navbar-alfan a {
+  }
+  
+  .navbar-alfan a {
     color: black;
     text-decoration: none;
-}
-
-.menu {
+  }
+  
+  .menu {
     display: none;
-}
-
-.navbar-ul {
+    cursor: pointer;
+  }
+  
+  .navbar-ul {
     margin-bottom: 0;
-}
-
-.menu-line {
-
+  }
+  
+  .menu-line {
+  
     width: 22px;
     height: 3px;
     margin-bottom: 3px;
     background-color: black;
-}
-
-
-@keyframes fadeIn {
+  }
+  
+  
+  @keyframes fadeIn {
     0% {
-        opacity: 0;
+      opacity: 0;
     }
-
+  
     100% {
-        opacity: 1;
+      opacity: 1;
     }
-}
-
-@keyframes main {
+  }
+  
+  @keyframes main {
     0% {
-        background-image: url(images/main.JPG);
+      background-image: url(images/main.JPG);
     }
-
+  
     35% {
-        background-image: url(images/sub.JPG);
-        color: white;
+      background-image: url(images/sub.JPG);
+      color: white;
     }
-
+  
     65% {
-        background-image: url(images/last.JPG);
+      background-image: url(images/last.JPG);
     }
-
+  
     100% {
-        background-image: url(images/main.JPG);
+      background-image: url(images/main.JPG);
     }
-
-}
-
-.main-wrapper {
+  
+  }
+  
+  .main-wrapper {
     padding: 180px 0 100px 0;
     background-image: url(images/main.JPG);
     background-size: cover;
@@ -127,34 +128,34 @@ li {
     animation-name: main;
     animation-duration: 5s;
     animation-iteration-count: infinite;
-}
-
-#id-navbar {
+  }
+  
+  #id-navbar {
     overflow: hidden;
-}
-
-/* The sticky class is added to the navbar with JS when it reaches its scroll position */
-.sticky {
+  }
+  
+  /* The sticky class is added to the navbar with JS when it reaches its scroll position */
+  .sticky {
     animation: fadeIn 1s;
     position: fixed;
     top: 0;
     width: 100%;
     z-index: 9999;
-}
-
-/* .sticky + .content {
+  }
+  
+  /* .sticky + .content {
     padding-top: 60px;
   } */
-
-.slide img {
+  
+  .slide img {
     width: 100%;
     height: 500px;
     object-fit: cover;
     /*   filter: brightness(50%) */
     /*   height: 500px; */
-}
-
-.carousel-inner:after {
+  }
+  
+  .carousel-inner:after {
     content: "";
     position: absolute;
     top: 0;
@@ -162,18 +163,18 @@ li {
     left: 0;
     right: 0;
     background: rgba(0, 0, 0, 0.6);
-}
-
-.carousel-content {
+  }
+  
+  .carousel-content {
     position: absolute;
     bottom: 50%;
     left: 10%;
     z-index: 20;
     color: white;
     text-shadow: 0 1px 2px rgba(0, 0, 0, .6);
-}
-
-/*
+  }
+  
+  /*
   .header-artikel{
       padding: 20px 40px;
       border-bottom: 2px solid #eeeeee;
@@ -182,9 +183,9 @@ li {
       padding: 20px 40px;
   }
   */
-
-/* header dengan dropdown #astrid */
-/*
+  
+  /* header dengan dropdown #astrid */
+  /*
   header {
     height: 65px;
     max-width: 1300px;
@@ -193,62 +194,62 @@ li {
     top: 0;
     z-index: 10;
   } */
-
-.header-left {
+  
+  .header-left {
     display: inline-block;
-}
-
-.header-left a {
+  }
+  
+  .header-left a {
     text-decoration: none;
     padding-top: 20px;
     color: #164302;
     letter-spacing: 1px;
     font-size: 30px;
     font-weight: bolder;
-}
-
-.header-right {
+  }
+  
+  .header-right {
     float: right;
-}
-
-.header-right ul {
+  }
+  
+  .header-right ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
-}
-
-.header-right li a {
+  }
+  
+  .header-right li a {
     display: inline-block;
     color: rgb(0, 0, 0);
     text-align: center;
     padding: 5px 10px;
     text-decoration: none;
-}
-
-.header-right li a:hover {
+  }
+  
+  .header-right li a:hover {
     background-color: #55826d;
     border-radius: 13px;
-}
-
-.header-right>ul>li {
+  }
+  
+  .header-right>ul>li {
     float: left;
-}
-
-li.dropdown {
+  }
+  
+  li.dropdown {
     margin-right: 15px;
     display: inline-block;
     border: 1px solid rgba(5, 5, 5, 0.692);
     border-radius: 15px;
     cursor: pointer;
-}
-
-.dropdown:hover .isi-dropdown {
+  }
+  
+  .dropdown:hover .isi-dropdown {
     display: block;
     margin-top: 6px;
-}
-
-.isi-dropdown {
+  }
+  
+  .isi-dropdown {
     width: 200px;
     position: fixed;
     display: none;
@@ -257,138 +258,138 @@ li.dropdown {
     background-color: black;
     padding: 0;
     text-align: left;
-}
-
-.isi-dropdown li {
+  }
+  
+  .isi-dropdown li {
     margin: 0;
     padding: 0px 5px 7px 10px;
-}
-
-.isi-dropdown a {
+  }
+  
+  .isi-dropdown a {
     color: white !important;
-}
-
-.isi-dropdown a:hover {
+  }
+  
+  .isi-dropdown a:hover {
     border-radius: 0;
     display: block;
     background: rgba(255, 255, 255, 0.2);
-}
-
-/* BATAS HEADER*/
-
-/* 2 kolom */
-/* Create two unequal columns that floats next to each other */
-.column {
+  }
+  
+  /* BATAS HEADER*/
+  
+  /* 2 kolom */
+  /* Create two unequal columns that floats next to each other */
+  .column {
     float: left;
     padding: 10px;
     height: 1000px;
     /* Should be removed. Only for demonstration */
-
-}
-
-.alfan-form-header {
+  
+  }
+  
+  .alfan-form-header {
     margin: 40px 0px;
-}
-
-.column-right {
+  }
+  
+  .column-right {
     margin: auto;
     width: 40%;
-}
-
-.alfan-dekorasi-login {
+  }
+  
+  .alfan-dekorasi-login {
     background-color: #ffdd00;
     width: 100px;
     height: 10px;
-}
-
-
-.left {
+  }
+  
+  
+  .left {
     width: 20%;
-}
-
-.right {
+  }
+  
+  .right {
     padding: 40px;
     width: 80%;
-}
-
-.row {
-    margin: 0;
-    padding: 0;
+  }
+  
+  .row {
+    margin:0;
+    padding:0;
     display: flex;
-}
-
-.sidebar {
+  }
+  
+  .sidebar{
     background-color: aliceblue;
-}
-
-.header-sidebar {
+  }
+  
+  .header-sidebar{
     font-size: 20px;
     font-weight: 700;
-    padding: 30px 20px;
-}
-
-.sidebar ul {
-    margin: 0;
-    padding: 0;
-}
-
-.sidebar li {
+    padding:30px 20px;
+  }
+  
+  .sidebar ul{
+    margin:0;
+    padding:0;
+  }
+  
+  .sidebar li{
     padding: 1em 5px;
     background-color: #e5edf3;
     border-radius: 15px;
     text-align: center;
     font-weight: 600;
-}
-
-.sidebar li:hover {
+  }
+  
+  .sidebar li:hover{
     background-color: #ddd;
-}
-
-/* end of 2 kolom */
-
-/* untuk responsive */
-@media screen and (max-width:800px) {
+  }
+  
+  /* end of 2 kolom */
+  
+  /* untuk responsive */
+  @media screen and (max-width:800px) {
     .navbar-alfan {
-        /* width: 100%; */
-        flex-direction: column;
-        align-items: center;
-        padding: 0px;
+      /* width: 100%; */
+      flex-direction: column;
+      align-items: center;
+      padding: 0px;
     }
-
+  
     .logo {
-        align-items: flex-start;
-        padding: 20px 0px;
+      align-items: flex-start;
+      padding: 20px 0px;
     }
-
+  
     li.dropdown {
-        margin-right: 0px;
-        display: block;
-        border: 0px solid rgba(5, 5, 5, 0.692);
-        border-radius: 0px;
+      margin-right: 0px;
+      display: block;
+      border: 0px solid rgba(5, 5, 5, 0.692);
+      border-radius: 0px;
     }
-
+  
     .navbar-ul {
-        width: 100%;
-        display: none;
+      width: 100%;
+      display: none;
     }
-
+  
     .navbar-li {
-        background-color: #EEEEEE;
-        display: block;
-        text-align: center;
-        padding: 10px 0px;
-        border-top: 1px solid #ddd;
-        /* padding-top: 20px; */
+      background-color: #EEEEEE;
+      display: block;
+      text-align: center;
+      padding: 10px 0px;
+      border-top: 1px solid #ddd;
+      /* padding-top: 20px; */
     }
-
+  
     .menu {
-        display: block;
-        position: absolute;
-        top: 20px;
-        right: 20px;
+      display: block;
+      position: absolute;
+      top: 20px;
+      right: 20px;
     }
-
+  
     .active {
-        display: block;
+      display: block;
     }
-}
+  }
