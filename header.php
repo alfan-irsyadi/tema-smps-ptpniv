@@ -2,12 +2,24 @@
 <html>
 
 <head>
+<<<<<<< HEAD
+<title>Tutorial theme</title>
+<script type="text/javascript" src="<?php echo get_stylesheet_directory_uri().'/js/jquery.js'; ?>">
+</script>
+<script type="text/javascript" src="<?php echo get_stylesheet_directory_uri().'/js/jquery-ui.min.js'; ?>">
+</script>
+<script type="text/javascript" src="<?php echo get_stylesheet_directory_uri().'/js/bootstrap.js'; ?>">
+</script>
+<link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri().'/css/bootstrap.css'; ?>">
+<link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>">
+=======
   <title>SMPS PTPN IV</title>
   <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri() . '/css/bootstrap.css'; ?>">
   <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>">
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+>>>>>>> d8944d5791f43131a6b0d6df88619f2c694456eb
 </head>
 
 <body>
@@ -18,13 +30,14 @@
 
   ?>
 
-  <nav class="navbar-alfan" id="id-navbar">
-    <!-- LOGO -->
-    <div class="logo">
-      <span id="id-logo">SMPS PTPN IV</span>
-    </div>
-    <ul class="navbar-ul" id="navbar-ul">
-      <?php
+<nav class="navbar-alfan" id="id-navbar">
+  <!-- LOGO -->
+  <div class="logo">
+    <span id="id-logo">SMP Swasta PTPN IV Dolok Ilir</span>
+  </div>
+  <ul class="navbar-ul" id="navbar-ul">
+    <?php
+
 
       for ($i = 0; $i < count($list); $i++) :
 

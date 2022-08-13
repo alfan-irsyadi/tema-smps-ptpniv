@@ -1,9 +1,15 @@
 body {
-  text-align: left;
+    text-align: left;
 }
 
 #ttr_sidebar {
     border-left: 1px solid black;
+}
+
+#ttr_footer {
+    width: 100%;
+    border-top: 1px #a2a2a2 solid;
+    text-align: center;
 }
 
 .title {
@@ -37,7 +43,7 @@ li {
     display: flex;
     justify-content: space-between;
     box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.2);
-    position: relative;
+    position: fixed;
     width: 100%;
     top: 0;
     z-index: 99999;
@@ -161,12 +167,13 @@ li {
 
 .carousel-content {
     position: absolute;
-    bottom: 50%;
+    /* bottom: 10%; */
     left: 10%;
     z-index: 20;
     color: white;
     text-shadow: 0 1px 2px rgba(0, 0, 0, .6);
 }
+
 
 /*
   .header-artikel{
@@ -387,6 +394,7 @@ li.dropdown {
         display: block;
     }
 }
+
 
 /* CONTENT  */
 /*VISI MISI */
@@ -658,5 +666,16 @@ footer .bottom-details .bottom_text{
   footer .content .link-boxes .input-box{
     width: 100%;
   }
+=======
+.optimis p{
+    font-size: 60pt;
+    margin-top: 2cm;
+    text-align: center;
+    font-weight: bold;
+    color: orangered;
 }
-/* BATAS FOOTER*/
+.isioptimis {
+    font-size: 12pt;
+    margin: 0px;
+    /* margin-top: 10px; */
+}
