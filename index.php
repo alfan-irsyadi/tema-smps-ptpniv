@@ -61,13 +61,15 @@ if(is_front_page()):
 <?php 
 else:
 
-    $post = get_post(40); 
+    $post = get_post(40);
+    $title = apply_filters('the_title', $post->post_title);    
     $content = apply_filters('the_content', $post->post_content); 
+    echo "<h1>".$title."</h1>";
     echo $content;  
     // var_dump($content)
 endif;?>
 
 
-<?php get_sidebar(); ?>
+<!-- <?php get_sidebar(); ?> -->
 <?php get_footer(); ?>
 <!-- daari husna -->
