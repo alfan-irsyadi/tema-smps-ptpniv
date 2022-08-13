@@ -1,6 +1,12 @@
 <html>
 <head>
-<title>SMPS PTPN IV</title>
+<title>Tutorial theme</title>
+<script type="text/javascript" src="<?php echo get_stylesheet_directory_uri().'/js/jquery.js'; ?>">
+</script>
+<script type="text/javascript" src="<?php echo get_stylesheet_directory_uri().'/js/jquery-ui.min.js'; ?>">
+</script>
+<script type="text/javascript" src="<?php echo get_stylesheet_directory_uri().'/js/bootstrap.js'; ?>">
+</script>
 <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri().'/css/bootstrap.css'; ?>">
 <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>">
 </head>
@@ -16,7 +22,7 @@ $dropdown = array("Beranda" => array(""), "Profil" => array("Sejarah", "Struktur
 <nav class="navbar-alfan" id="id-navbar">
   <!-- LOGO -->
   <div class="logo">
-    <span id="id-logo">SMPS PTPN IV</span>
+    <span id="id-logo">SMP Swasta PTPN IV Dolok Ilir</span>
   </div>
   <ul class="navbar-ul" id="navbar-ul">
     <?php
