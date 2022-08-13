@@ -15,7 +15,7 @@
         </ul>
         <ul class="box">
           <li class="link_name">Lokasi</li>
-          <li><a href="https://goo.gl/maps/J3HC4ERRvGgJizjb7">Moho, Kec. Jawa Maraja Bah Jambi, Kabupaten Simalungun, Sumatera Utara 21174</a></li>
+          <li><a href="https://maps.app.goo.gl/3GFsENXKZ7L8wB9q8">Jl. Yogyakarta, Kecamatan Dolok Batu Nanggar, Kabupaten Simalungun, Sumatera Utara</a></li>
         </ul>
         <ul class="box">
             <li class="link_name">Media Sosial</li>
@@ -30,7 +30,7 @@
 
     <div class="bottom-details">
       <div class="bottom_text">
-        <span class="copyright_text">Copyright © 2022 <a href="#">SMPS PTPN IV Dolok Ilir.</a>All rights reserved</span>
+        <span class="copyright_text">Copyright © 2022 <a href="#">Tim PPM USU 2022.</a>All rights reserved</span>
       </div>
     </div>
  </footer>

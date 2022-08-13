@@ -388,6 +388,18 @@ li.dropdown {
 }
 
 /* CONTENT  */
+/*VISI MISI */
+
+.visi-misi {
+  padding-top: 15px;
+}
+
+.visi-misi img {
+    width: 70%;
+    position: relative;
+    left: 15%;
+}
+
 .highlight {
   display: flex;
   padding: 0px 120px;
@@ -405,6 +417,7 @@ li.dropdown {
 }
 .highlight-content:hover {
   background-color: orangered;
+  color: #ffffff;
 }
 /*
 .highlight .info-wrapper {

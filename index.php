@@ -30,6 +30,23 @@
     </button>
 </div><!-- end of slider  -->
 
+<div class="visi-misi">
+    <img src=<?= get_template_directory_uri() ."/compressed/visimisi.png" ?> alt="">
+    <!-- <div class="visi">
+        <h3>Visi</h3>
+        <p>Terwujudnya Siswa/Peserta Didik yang Berpestrasi, Kreatif, Berakhlak Mulia, Berdasarkan Iman dan Taqwa</p>
+    </div>
+    <div class="visi">
+        <h3>Misi</h3>
+        <p>
+            <ol>
+                <li>Meningkatkan Disiplin dan Akhlak Mulia Bagi Segenap Warga Sekolah Berdasarkan Iman dan Taqwa</li>
+                <li>Melaksanakan Pembelajaran dan Bimbngan secara Kreatif, Inovatif dan Efektif sehingga Peserta Didik Berkembang Secara Optimal</li>
+                <li>Mengembangkan Ilmu Pengetahuan dan Teknologi Berdasarkan Minar dan Bakat Peserta Didik sehingga terwujud peserta didik yang Berprestasi</li>
+            </ol>
+        </p>
+    </div> -->
+</div>
 <div class="highlight">
   <div class="highlight-content">
     <h4>Guru</h4>
