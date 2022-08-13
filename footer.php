@@ -1,4 +1,4 @@
-    <footer>
+<footer>
       <div class="content">
         <div class="link-boxes">
           <ul class="box">
@@ -30,9 +30,6 @@
     </footer>
     <script type="text/javascript" src="<?php echo get_stylesheet_directory_uri() . '/js/bootstrap.js'; ?>"></script>
     <script type="text/javascript" src="<?php echo get_stylesheet_directory_uri() . '/js/script.js'; ?>"></script>
-    </body>
+</body>
 
-    </html>
-
-    <!-- TESSS -->
-    <!-- tess commit dari vs codew -->
+</html>
