@@ -1,5 +1,8 @@
+<!-- <?= bloginfo('stylesheet_url') ?> -->
 <html>
+
 <head>
+<<<<<<< HEAD
 <title>Tutorial theme</title>
 <script type="text/javascript" src="<?php echo get_stylesheet_directory_uri().'/js/jquery.js'; ?>">
 </script>
@@ -9,15 +12,23 @@
 </script>
 <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri().'/css/bootstrap.css'; ?>">
 <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>">
+=======
+  <title>SMPS PTPN IV</title>
+  <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri() . '/css/bootstrap.css'; ?>">
+  <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+>>>>>>> d8944d5791f43131a6b0d6df88619f2c694456eb
 </head>
 
 <body>
 
-<?php
-$list = array("Beranda", "Profil", "Informasi", "Alumni");
-$dropdown = array("Beranda" => array(""), "Profil" => array("Sejarah", "Struktur Organisasi"), "Informasi" => array("Pendaftaran", "Kelulusan"), "Alumni" => array(""));
+  <?php
+  $list = array("Beranda", "Profil", "Informasi", "Alumni");
+  $dropdown = array("Beranda" => array(""), "Profil" => array("Sejarah", "Struktur Organisasi"), "Informasi" => array("Pendaftaran", "Kelulusan"), "Alumni" => array(""));
 
-?>
+  ?>
 
 <nav class="navbar-alfan" id="id-navbar">
   <!-- LOGO -->
@@ -27,25 +38,26 @@ $dropdown = array("Beranda" => array(""), "Profil" => array("Sejarah", "Struktur
   <ul class="navbar-ul" id="navbar-ul">
     <?php
 
-    for ($i = 0; $i < count($list); $i++) :
 
-    ?>
-      <li class="navbar-li dropdown">
-        <a href="" class=""><?= $list[$i] ?></a>
+      for ($i = 0; $i < count($list); $i++) :
 
-        <ul class="isi-dropdown">
-          <?php
-          if (count($dropdown[$list[$i]]) != 1) :
-            for ($j = 0; $j < count($dropdown[$list[$i]]); $j++) : ?>
-              <li><a href="#"><?= $dropdown[$list[$i]][$j] ?></a></li>
-          <?php endfor;
-          endif; ?>
-        </ul>
+      ?>
+        <li class="navbar-li dropdown">
+          <a href="" class=""><?= $list[$i] ?></a>
 
-      </li>
+          <ul class="isi-dropdown">
+            <?php
+            if (count($dropdown[$list[$i]]) != 1) :
+              for ($j = 0; $j < count($dropdown[$list[$i]]); $j++) : ?>
+                <li><a href="#"><?= $dropdown[$list[$i]][$j] ?></a></li>
+            <?php endfor;
+            endif; ?>
+          </ul>
 
-    <?php endfor ?>
-    <!-- @auth
+        </li>
+
+      <?php endfor ?>
+      <!-- @auth
     <li class="navbar-li dropdown">
       <div class="dropdown show">
         <a class="nav-item dropdown-toggle" href="#" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -59,11 +71,16 @@ $dropdown = array("Beranda" => array(""), "Profil" => array("Sejarah", "Struktur
       </div>
     </li>
     @endauth -->
-  </ul>
-  <div class="menu" id="id-menu">
-    <div class="menu-line"></div>
-    <div class="menu-line"></div>
-    <div class="menu-line"></div>
-  </div>
-</nav>
-<div class="content">
+    </ul>
+    <div class="menu" id="id-menu">
+      <div class="menu-line"></div>
+      <div class="menu-line"></div>
+      <div class="menu-line"></div>
+    </div>
+  </nav>
+  <div class="content">
+
+    <!-- index.php -->
+    
+    <!-- footer -->
+    
