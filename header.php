@@ -15,22 +15,24 @@
   <?php
   $list = array("Beranda", "Profil", "Informasi", "Alumni");
   $dropdown = array("Beranda" => array(""), "Profil" => array("Sejarah", "Struktur Organisasi"), "Informasi" => array("Pendaftaran", "Kelulusan"), "Alumni" => array(""));
+  $link = ["","profil","informasi","alumni"];
 
   ?>
 
-  <nav class="navbar-alfan" id="id-navbar">
-    <!-- LOGO -->
-    <div class="logo">
-      <span id="id-logo">SMPS PTPN IV</span>
-    </div>
-    <ul class="navbar-ul" id="navbar-ul">
-      <?php
+<nav class="navbar-alfan" id="id-navbar">
+  <!-- LOGO -->
+  <div class="logo">
+    <span id="id-logo">SMP Swasta PTPN IV Dolok Ilir</span>
+  </div>
+  <ul class="navbar-ul" id="navbar-ul">
+    <?php
+
 
       for ($i = 0; $i < count($list); $i++) :
 
       ?>
         <li class="navbar-li dropdown">
-          <a href="" class=""><?= $list[$i] ?></a>
+          <a href="/index.php/<?=$link[$i]?>" class=""><?= $list[$i] ?></a>
 
           <ul class="isi-dropdown">
             <?php
