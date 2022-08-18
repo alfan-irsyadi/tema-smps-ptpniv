@@ -32,7 +32,7 @@
 
       ?>
         <li class="navbar-li dropdown">
-          <a href="/index.php/<?=$link[$i]?>" class=""><?= $list[$i] ?></a>
+          <a href=<?= get_home_url()."/index.php/".$link[$i]?> class=""><?= $list[$i] ?></a>
 
           <ul class="isi-dropdown">
             <?php
