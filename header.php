@@ -15,6 +15,7 @@
   <?php
   $list = array("Beranda", "Profil", "Informasi", "Alumni");
   $dropdown = array("Beranda" => array(""), "Profil" => array("Sejarah", "Struktur Organisasi"), "Informasi" => array("Pendaftaran", "Kelulusan"), "Alumni" => array(""));
+  $link = ["","profil","informasi","alumni"];
 
   ?>
 
@@ -31,7 +32,7 @@
 
       ?>
         <li class="navbar-li dropdown">
-          <a href="" class=""><?= $list[$i] ?></a>
+          <a href="/index.php/<?=$link[$i]?>" class=""><?= $list[$i] ?></a>
 
           <ul class="isi-dropdown">
             <?php

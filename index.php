@@ -44,33 +44,21 @@ if(is_front_page()):
         <span class="visually-hidden">Next</span>
     </button>
 </div><!-- end of slider  -->
-<div class="visi-misi">
-    <img src=<?= get_template_directory_uri() ."/compressed/visimisi.png" ?> alt="">
-    <!-- <div class="visi">
-        <h3>Visi</h3>
-        <p>Terwujudnya Siswa/Peserta Didik yang Berpestrasi, Kreatif, Berakhlak Mulia, Berdasarkan Iman dan Taqwa</p>
-    </div>
-    <div class="visi">
-        <h3>Misi</h3>
-        <p>
-            <ol>
-                <li>Meningkatkan Disiplin dan Akhlak Mulia Bagi Segenap Warga Sekolah Berdasarkan Iman dan Taqwa</li>
-                <li>Melaksanakan Pembelajaran dan Bimbngan secara Kreatif, Inovatif dan Efektif sehingga Peserta Didik Berkembang Secara Optimal</li>
-                <li>Mengembangkan Ilmu Pengetahuan dan Teknologi Berdasarkan Minar dan Bakat Peserta Didik sehingga terwujud peserta didik yang Berprestasi</li>
-            </ol>
-        </p>
-    </div> -->
-</div>
-<div class="highlight">
-  <div class="highlight-content">
-    <h4>Guru</h4>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet ea ad atque distinctio perferendis exercitationem commodi, nobis numquam repellat, </p>
-    </div>
-  <div class="highlight-content"></div>
-  <div class="highlight-content"></div>
-</div>
-<div id="ttr_content" class="col-lg-8 col-sm-8 col-md-8 col-xs-12">
 
+<div class="row">
+    <div class="column" style="width:30%; background-color:chocolate; margin: 10px 0px;">
+        <ul>
+            <li>Membangun generasi yang unggul dan berkualitas</li>
+            <li>Berprestasi-Berkreasi-Berinovasi-Mandiri</li>
+            <li>Menghasilkan alumni-alumni yang berkompeten di bidangnya</li>
+        </ul>
+    </div>
+    <div class="column" style="width:70%;">
+        <img src=<?= get_template_directory_uri() ."/compressed/visimisi.png" ?> alt="" style="width:100%;">
+    </div>
+</div>
+
+<div id="ttr_content" class="col-lg-8 col-sm-8 col-md-8 col-xs-12">
     <div class="row">
         <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
                 <div class="col-lg-6 col-sm-6 col-md-6 col-xs-12">
