@@ -4,7 +4,7 @@
       <ul class="box">
         <li class="link_name">Hubungi Kami</li>
         <li class="media-icons">
-          <p><i class="fab fa-solid fa-phone">0821-****-*** (Nama)</i></p>
+          <p><i class="fas fa-circle-phone">0821-****-*** (Nama)</i></p>
         </li>
       </ul>
       <ul class="box">
