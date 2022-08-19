@@ -60,7 +60,7 @@ if (is_front_page()) :
             </div>
         </div>
         <div class="column" style="width:70%;">
-            <img src=<?= get_template_directory_uri() . "/compressed/visi.png" ?> alt="" style="width:100%;">
+            <img src=<?= get_template_directory_uri() . "/compressed/misi.png" ?> alt="" style="width:100%;">
         </div>
     </div>
 
