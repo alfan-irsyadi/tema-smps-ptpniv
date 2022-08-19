@@ -1,7 +1,7 @@
-<?php get_header();
-global $post;
-$slug = $post->post_name;
+<?php 
+
 if (is_front_page()) :
+    get_header();
 ?>
     <!-- slider start -->
     <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
@@ -63,19 +63,21 @@ if (is_front_page()) :
             <img src=<?= get_template_directory_uri() . "/compressed/misi.png" ?> alt="" style="width:100%;">
         </div>
     </div>
-    <div id="ttr_content" class="col-lg-8 col-sm-8 col-md-8 col-xs-12">
+    <div id="ttr_content" class="ttr_content">        
         <div class="row">
             <?php
             if (have_posts()) :
                 while (have_posts()) :
                     the_post();
                     $cat_name =  get_the_category(get_the_ID())[0]->name;
-                    if ($cat_name == "Artikel") :
+                    if ($cat_name == "Artikel") :                    
             ?>
-                        <div onclick="location.href='#'" style="cursor:pointer; background-color:brown;">
-                            <h1><?php the_title(); ?></h1>
-                            <h4>Posted on <?php the_time('F jS, Y') ?></h4>
-                            <p><?php the_content(__('(more...)')); ?></p>
+                        <div class="artikel" onclick="location.href='<?= get_permalink() ?>'" style="cursor:pointer">
+                            <h2><?php the_title(); ?></h2>
+                            <hr>
+                            <span class="posted-on"><?php the_time('j F Y') ?></span>
+                            <p><?php the_excerpt(); ?></p>
+                            <!-- <p><?php the_content(__('(more...)')); ?></p> -->
                         </div>
                 <?php
                     endif;
@@ -88,9 +90,17 @@ if (is_front_page()) :
 
 <?php
 else :
-    $post = get_post(40);
-    $content = apply_filters('the_content', $post->post_content);
-    echo $content;
+    $post = get_post();    
+    get_header("2");?>
+    <div class="artikel-post" onclick="location.href='<?= get_permalink() ?>'" style="cursor:pointer">
+                            <h1><?php the_title(); ?></h1>
+                            <hr>
+                            <span class="posted-on"><?php the_time('j F Y') ?></span>
+                            <!-- <p><?php the_excerpt(); ?></p> -->
+                            <p><?php the_content(__('(more...)')); ?></p>
+                        </div>
+
+<?php    
 endif; ?>
 
 

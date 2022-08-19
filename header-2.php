@@ -18,11 +18,10 @@
   $list = array("Beranda", "Profil", "Informasi", "Alumni");
   $dropdown = array("Beranda" => array(""), "Profil" => array("Sejarah", "Struktur Organisasi"), "Informasi" => array("Pendaftaran", "Kelulusan"), "Alumni" => array(""));
   $link = ["","profil","informasi","alumni"];
-  $slugs = array("Beranda" => array(""), "Profil" => array("sejarah", "struktur-kepegawaian"), "Informasi" => array("Pendaftaran", "Kelulusan"), "Alumni" => array(""));
 
   ?>
 
-<nav class="navbar-alfan-home" id="id-navbar">
+<nav class="navbar-alfan" id="id-navbar">
   <!-- LOGO -->
   <div class="logo">
     <span id="id-logo">SMP Swasta PTPN IV Dolok Ilir</span>
@@ -41,7 +40,7 @@
             <?php
             if (count($dropdown[$list[$i]]) != 1) :
               for ($j = 0; $j < count($dropdown[$list[$i]]); $j++) : ?>
-                <li><a href=<?= get_home_url()."/index.php/profil#".$slugs[$list[$i]][$j] ?>><?= $dropdown[$list[$i]][$j] ?></a></li>
+                <li><a href="#"><?= $dropdown[$list[$i]][$j] ?></a></li>
             <?php endfor;
             endif; ?>
           </ul>
@@ -75,4 +74,3 @@
     <!-- index.php -->
     
     <!-- footer -->
-    
