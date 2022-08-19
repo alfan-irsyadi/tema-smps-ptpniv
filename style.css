@@ -828,3 +828,12 @@ html :where(img[class*="wp-image-"]) {
   height: auto;
   max-width: 80%;
 }
+
+.header-artikel{
+  display: flex;
+  justify-content: space-between;
+}
+
+p{
+  text-align: justify;
+}

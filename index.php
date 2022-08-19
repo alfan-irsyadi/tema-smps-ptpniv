@@ -65,6 +65,11 @@ if (is_front_page()) :
     </div>
     <div id="ttr_content" class="ttr_content">        
         <div class="row">
+            <div class="header-artikel" style="width: 100%;">
+                <span style="font-size: 48px;">Berita Terkini</span>
+                <a style="justify-content: center; align-items:end; color:#888; display:flex;"> lihat selengkapnya...</a>
+            </div>
+            <hr>
             <?php
             if (have_posts()) :
                 while (have_posts()) :
