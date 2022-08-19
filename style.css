@@ -622,6 +622,7 @@ footer .bottom-details .bottom_text{
   }
 }
 @media (max-width: 520px){
+
   footer::before{
     top: 145px;
   }
@@ -650,3 +651,31 @@ footer .bottom-details .bottom_text{
     margin: 0px;
     /* margin-top: 10px; */
 }
+  .flex-container {
+    display: flex;
+    flex-direction: column;
+    vertical-align: middle;
+  }
+
+  .flex-container > div {
+    background-color: green;
+    color: #ddd;
+    /* font-weight: bold; */
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    /* width: 100px; */
+    padding: 7px;
+    border-radius: 10px;
+    margin: 10px;
+    margin-bottom: 0%;
+    text-align: center;
+    line-height: 50px;
+    font-size: 20px;
+  }
+
+  .vertical-center {
+    margin: 0;
+    position: relative;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
