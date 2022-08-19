@@ -46,12 +46,18 @@ if(is_front_page()):
 </div><!-- end of slider  -->
 
 <div class="row">
-    <div class="column" style="width:30%; background-color:chocolate; margin: 10px 0px;">
-        <ul>
+    <div class="column" style="width:30%; margin: 10px 0px;">
+        <!-- <ul>
+            <li>Menggunakan kurikulum yang sesuai dengan Peraturan Menteri Pendidikan dan Kebudayaan</li>
             <li>Membangun generasi yang unggul dan berkualitas</li>
             <li>Berprestasi-Berkreasi-Berinovasi-Mandiri</li>
             <li>Menghasilkan alumni-alumni yang berkompeten di bidangnya</li>
-        </ul>
+        </ul> -->
+        <div class="flex-container vertical-center">
+            <div>Menggunakan kurikulum yang sesuai dengan Peraturan Menteri Pendidikan dan Kebudayaan</div>
+            <div>Membangun generasi yang unggul dan berkualitas</div>
+            <div>Menghasilkan alumni-alumni yang berkompeten di bidangnya</div>
+        </div>
     </div>
     <div class="column" style="width:70%;">
         <img src=<?= get_template_directory_uri() ."/compressed/visimisi.png" ?> alt="" style="width:100%;">
@@ -59,17 +65,31 @@ if(is_front_page()):
 </div>
 
 <div id="ttr_content" class="col-lg-8 col-sm-8 col-md-8 col-xs-12">
-    <div class="row">
-        <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+    <div class="row">             
+        <?php         
+        if (have_posts()) : 
+            while (have_posts()) :
+                the_post(); 
+                $cat_name =  get_the_category(get_the_ID())[0]->name;
+                if($cat_name=="Artikel"):
+            ?>
                 <div class="col-lg-6 col-sm-6 col-md-6 col-xs-12">
                     <h1><?php the_title(); ?></h1>
                     <h4>Posted on <?php the_time('F jS, Y') ?></h4>
                     <p><?php the_content(__('(more...)')); ?></p>
                 </div>
-            <?php endwhile;
+                
+            <?php
+            endif;
+            endwhile;
         else : ?>
             <p><?php _e('Sorry, no posts matched your criteria.'); ?></p>
         <?php endif; ?>
+    </div>
+
+    <div class="row">
+        
+        
     </div>
 </div>
 
