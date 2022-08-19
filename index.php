@@ -63,35 +63,6 @@ if (is_front_page()) :
             <img src=<?= get_template_directory_uri() . "/compressed/misi.png" ?> alt="" style="width:100%;">
         </div>
     </div>
-
-    <div id="ttr_content" class="col-lg-8 col-sm-8 col-md-8 col-xs-12">
-        <div class="row">
-            <?php
-            if (have_posts()) :
-                while (have_posts()) :
-                    the_post();
-                    $cat_name =  get_the_category(get_the_ID())[0]->name;
-                    if ($cat_name == "Artikel") :
-            ?>
-                        <div class="col-lg-6 col-sm-6 col-md-6 col-xs-12">
-                            <h1><?php the_title(); ?></h1>
-                            <h4>Posted on <?php the_time('F jS, Y') ?></h4>
-                            <p><?php the_content(__('(more...)')); ?></p>
-                        </div>
-
-                <?php
-                    endif;
-                endwhile;
-            else : ?>
-                <p><?php _e('Sorry, no posts matched your criteria.'); ?></p>
-            <?php endif; ?>
-        </div>
-
-        <div class="row">
-
-
-        </div>
-    </div>
     <div id="ttr_content" class="col-lg-8 col-sm-8 col-md-8 col-xs-12">
         <div class="row">
             <?php

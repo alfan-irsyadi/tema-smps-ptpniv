@@ -6,7 +6,3 @@
             <h2><?php _e('Archives'); ?></h2>
             <ul> <?php wp_get_archives(); ?> </ul>
         </div> -->
-
-        
-
- -->
