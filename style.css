@@ -464,6 +464,7 @@ footer .content{
 }
 .content .box .media-icons .fab {
   color: #fff;
+  margin-top: 12px;
 }
 .box .media-icons a:nth-child(1){
   background: #4267B2;

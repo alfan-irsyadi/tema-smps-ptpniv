@@ -54,14 +54,14 @@ if(is_front_page()):
         </ul>
     </div>
     <div class="column" style="width:70%;">
-        <img src=<?= get_template_directory_uri() ."/compressed/visimisi.png" ?> alt="" style="width:100%;">
+        <img src=<?= get_template_directory_uri() ."/compressed/misi.png" ?> alt="" style="width:100%;">
     </div>
 </div>
 
 <div id="ttr_content" class="col-lg-8 col-sm-8 col-md-8 col-xs-12">
     <div class="row">
         <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-                <div class="col-lg-6 col-sm-6 col-md-6 col-xs-12">
+                <div onclick="location.href='#'" style="cursor:pointer; background-color:brown;">
                     <h1><?php the_title(); ?></h1>
                     <h4>Posted on <?php the_time('F jS, Y') ?></h4>
                     <p><?php the_content(__('(more...)')); ?></p>
